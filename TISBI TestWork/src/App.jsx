@@ -1,7 +1,10 @@
 
 import Header from './components/header/header.jsx';
-import Slider from './components/slider/slider.jsx'
+import Slider from './components/slider/slider.jsx';
+import Search from "./components/searchBlock/search.jsx";
 import './App.scss'
+import Date from "./components/BusinessToDate/date.jsx";
+
 
 function App() {
 
@@ -10,7 +13,9 @@ function App() {
 
         <Header />
         <main>
-            <Slider />
+           <Slider />
+            <Search />
+            <Date />
         </main>
 
     </>
