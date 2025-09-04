@@ -1,0 +1,287 @@
+.forBack {
+  margin-top: 48px;
+  width: 100%;
+  background:url("./Other1.png") no-repeat;
+
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: #f5f5f5;
+  padding: 20px;
+
+  h1.form-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #242A38;
+    margin-bottom: 24px;
+    text-align: start;
+    font-family: Open Sans, sans-serif;
+  }
+
+  form {
+    width: 580px;
+    height: 557px;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    gap: 24px;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .form-label {
+        font-size: 14px;
+        font-weight: 500;
+        color: #2d3748;
+        margin-bottom: 4px;
+      }
+
+      .form-input {
+        width: 484px;
+        height: 48px;
+        padding: 12px 16px;
+        border: 2px solid rgba(108, 111, 117, 0.3);
+        font-size: 16px;
+        transition: border-color 0.2s ease;
+
+        &:focus {
+          outline: none;
+          border-color: #2F5DD3;
+        }
+
+        &::placeholder {
+          color: #a0aec0;
+        }
+      }
+    }
+
+    /* Стили для радиокнопок */
+    #radio {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 286px;
+      height: 24px;
+      align-items: center;
+      text {
+        color: #6C6F75;
+      }
+
+      .form-label {
+        font-size: 16px;
+        font-weight: 500;
+        color: #2d3748;
+        margin: 0;
+        white-space: nowrap;
+      }
+
+      .radio-group {
+        display: flex;
+        gap: 24px;
+        margin: 0;
+      }
+
+      .radio-label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        white-space: nowrap;
+      }
+
+      .radio-input {
+        display: none;
+
+        &:checked + .radio-custom {
+          border-color: #2F5DD3;
+          background: #2F5DD3;
+        }
+
+        &:checked + .radio-custom::after {
+          border: 1px solid white;
+        }
+      }
+
+      .radio-custom {
+        width: 24px;
+        height: 24px;
+        border: 2px solid #2F5DD3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+        flex-shrink: 0;
+
+
+      }
+
+    }
+
+    /* Стили для выпадающего списка */
+    #select {
+      display: flex;
+      flex-direction: column;
+
+      .form-select {
+        width: 484px;
+        height: 48px;
+        padding: 12px 16px;
+        border: 2px solid rgba(108, 111, 117, 0.3);
+        font-size: 16px;
+        background: white;
+        cursor: pointer;
+        transition: border-color 0.2s ease;
+
+        &:focus {
+          outline: none;
+          border-color: rgba(108, 111, 117, 0.3);
+        }
+      }
+    }
+
+    /* Кнопка отправки */
+    .submit-button {
+      width: 484px;
+      height: 48px;
+      background: #2F5DD3;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: Open Sans, system-ui;
+      color: rgba(255, 255, 255, 1);
+      cursor: pointer;
+
+
+      &:hover {
+        background: #2546b3;
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+
+    /* Разделительная линия */
+    .form-divider {
+      width: 484px;
+      height: 1px;
+      background: #e2e8f0;
+      margin: 0;
+    }
+
+    /* Кнопки социальных сетей */
+    .APIbtn-container {
+      width: 484px;
+      height: 48px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 24px;
+
+      .submit-btn {
+        width: 230px;
+        height: 48px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+          opacity: 0.9;
+        }
+
+        &:active {
+          transform: translateY(1px);
+        }
+
+        img {
+          width: 24px;
+          height: 24px;
+          object-fit: contain;
+        }
+      }
+
+      #yandex {
+        background-color: #FC3F1D;
+      }
+
+      #vk {
+        background-color: #0077FF;
+      }
+    }
+  }
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 620px) {
+  .application-form {
+    padding: 16px;
+
+    form {
+      width: 100%;
+      height: auto;
+      padding: 24px;
+
+      .form-group .form-input,
+      #select .form-select,
+      .submit-button,
+      .form-divider,
+      .APIbtn-container {
+        width: 100% !important;
+      }
+
+      #radio {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        height: auto;
+
+        .radio-group {
+          width: 100%;
+          justify-content: space-between;
+        }
+      }
+
+      .APIbtn-container {
+        flex-direction: column;
+        height: auto;
+        gap: 12px;
+
+        .submit-btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* Дополнительные стили для состояний */
+.form-input:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 3px rgba(47, 93, 211, 0.1);
+}
+
+/* Стили для disabled состояний */
+.form-input:disabled,
+.form-select:disabled,
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submit-button:disabled:hover {
+  background: #2F5DD3;
+  transform: none;
+}

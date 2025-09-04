@@ -1,0 +1,33 @@
+.date {
+  //width: 440px;
+  height: 44px;
+  margin-left: 128px;
+  margin-top: 48px;
+  margin-right: 872px;
+  display: inline-block;
+   h1 {
+     font-family: Open Sans, sans-serif;
+     font-weight: 700;
+     font-style: Italic;
+     font-size: 32px;
+     //line-height: 100%;
+     letter-spacing: 0;
+     vertical-align: middle;
+     color: #242A38;
+     display: flex;
+     flex-direction: row;
+      section {
+        background-color: #FF6B00;
+        height: 44px;
+        color: #FFFFFF;
+        text-align: center;
+        white-space: nowrap;
+        padding-right: 9px;
+        padding-left: 9px;
+        margin-left: 3px;
+
+      }
+
+
+   }
+}

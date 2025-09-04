@@ -82,39 +82,31 @@ function Slider() {
                     className="slider-image"
                 />
 
-                <div className="img-indicators">
-                    <button className="img-btn"
-                            key={slider[0].id}
-                            onClick={() => goToSlide(0)}>
-                            <CgShapeRhombus /></button>
-                    <button className="img-btn"
-                            key={slider[1].id}
-                            onClick={() => goToSlide(1)}>
-                            <CgShapeRhombus /></button>
-                    <button className="img-btn"
-                            key={slider[2].id}
-                            onClick={() => goToSlide(2)}>
-                            <CgShapeRhombus /></button>
-                    <button className="img-btn"
-                            key={slider[3].id}
-                            onClick={() => goToSlide(3)}>
-                            <CgShapeRhombus /></button>
-                    <button className="img-btn"
-                            key={slider[4].id}
-                            onClick={() => goToSlide(4)}>
-                            <CgShapeRhombus /></button>
+                <div className="sliderButtons">
+                    <div className="img-buttons">
+                        <button className="prev-btn" type="button" onClick={prevSlide}> <SlArrowLeft /></button>
+                        <button className="next-btn" type="button" onClick={nextSLide}><SlArrowRight /></button>
+                    </div>
+                    <div className="img-indicators">
+                        {slider.map((slide, index) => (
+                            <button
+                                className={`img-btn ${index === changeSlide ? 'active' : ''}`}
+                                key={slide.id}
+                                onClick={() => goToSlide(index)}
+                            >
+                                <CgShapeRhombus />
+                            </button>
+                        ))}
+                    </div>
                 </div>
 
-                <div className="img-buttons">
-                    <button className="prev-btn" type="button" onClick={prevSlide}> <SlArrowLeft /></button>
-                    <button className="next-btn" type="button" onClick={nextSLide}><SlArrowRight /></button>
-                </div>
+
 
             </div>
             <div className="slider_content">
                 <h2>{slider[changeSlide].title}</h2>
                 <p>{slider[changeSlide].description}</p>
-                <button className="next-btn" type="active" onClick=''>Кнопка</button>
+                <button className="content-btn" type="active" onClick=''>Кнопка</button>
 
             </div>
         </div>
