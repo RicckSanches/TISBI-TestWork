@@ -21,12 +21,11 @@ function Search() {
                     <input
                         className="SearchInput"
                         placeholder={"Товары, услуги..."}
-                        //formMethod={'search'}
                         >
                     </input>
                 </div>
 
-                <button className="SearchButton">
+                <button className="SearchButton" type={"submit"}>
                     Поиск
                 </button>
 

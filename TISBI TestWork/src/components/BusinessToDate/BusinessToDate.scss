@@ -1,0 +1,105 @@
+.CalendarBusinessToDate {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  .cards {
+    width: 656px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 48px;
+    margin-right: 128px;
+    margin-top: 24px;
+    padding: 0;
+
+
+    .event-card {
+      width: 656px;
+      height: 287px;
+      padding: 7px 24px 24px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .event-tags {
+        width: 608px;
+        height: 68px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        margin-bottom: 24px;
+
+
+        span {
+          height: 30px;
+          background-color: rgba(47, 93, 211, 0.1);
+          color: rgba(47, 93, 211, 1);
+          text-align: center;
+          font-size: 16px;
+          font-family: OpenSans, sans-serif;
+          margin-right: 8px;
+          margin-bottom: 8px;
+          padding-left: 8px;
+          padding-right: 8px;
+
+
+          &:last-child {
+            margin-right: 0; // Убираем отступ у последнего элемента
+          }
+        }
+      }
+    }
+
+    .event-description {
+      width: 608px;
+      height: 75px;
+
+      h3 {
+        font-size: 18px;
+        font-family: OpenSans, "Segoe UI Semibold", sans-serif;
+        color: rgba(36, 42, 56, 1);
+      }
+    }
+
+    .event-actions {
+      width: 377px;
+      height: 48px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 24px;
+
+      .btn-primary {
+        width: 151px;
+        height: 48px;
+        border: 1px solid rgba(47, 93, 211, 1);
+        color: #2F5DD3;
+        font-size: 16px;
+        font-family: OpenSans, sans-serif;
+        padding: 13px 38px 13px 38px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .btn-secondary {
+        width: 202px;
+        height: 48px;
+        background-color: rgba(47, 93, 211, 1);
+        border: none;
+        font-size: 16px;
+        color: #FFFFFF;
+        border-bottom-left-radius: 16px;
+        clip-path: polygon(
+                        0 0,           // верхний левый
+                        calc(100% - 30px) 0,  // начало среза справа
+                        100% 20px,     // конец среза сверху
+                        100% 100%,     // нижний правый
+                        0 100%         // нижний левый
+        );
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      }
+    }
+  }

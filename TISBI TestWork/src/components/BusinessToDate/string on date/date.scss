@@ -18,10 +18,14 @@
      flex-direction: row;
       section {
         background-color: #FF6B00;
-        width: 171px;
         height: 44px;
         color: #FFFFFF;
         text-align: center;
+        white-space: nowrap;
+        padding-right: 9px;
+        padding-left: 9px;
+        margin-left: 3px;
+
       }
 
 
