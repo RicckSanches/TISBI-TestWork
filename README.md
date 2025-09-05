@@ -81,10 +81,10 @@ React,\
 ## 📸 Скриншоты
 
 Главная страница (слайдер и поиск):
-![Главная](./public/screenshots/img1.png)
+![Главная](TISBI TestWork/public/screenshots/img1.png)
 
 Календарь мероприятий:
-![Календарь](./public/screenshots/img2.png)
+![Календарь](TISBI TestWork/public/screenshots/img2.png)
 
 Форма обратной связи:
-![Форма](./public/screenshots/img3.png)
+![Форма](TISBI TestWork/public/screenshots/img3.png)
