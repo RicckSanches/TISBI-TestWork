@@ -81,10 +81,10 @@ React,\
 ## 📸 Скриншоты
 
 Главная страница (слайдер и поиск):
-![Главная](./public/screenshots/05c4e563-d95d-4046-9fbb-4f5cdcbbd1a7.png)
+![Главная](./public/screenshots/img1.png)
 
 Календарь мероприятий:
-![Календарь](./public/screenshots/ba70f972-b60c-44a5-9364-eea20fdfc6b0.png)
+![Календарь](./public/screenshots/img2.png)
 
 Форма обратной связи:
-![Форма](./public/screenshots/5facd994-80fa-4864-8b44-9d85ce69eba2.png)
+![Форма](./public/screenshots/img3.png)
